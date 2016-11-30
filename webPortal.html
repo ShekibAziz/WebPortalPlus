@@ -1,25 +1,92 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" href="webPortal.css">
-    <script type="text/javascript" src="webportal.js"></script>
-    <title> WebPortal Plus </title>
-  </head>
+<head>
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
 
-  <body>
-    <ul>
-      <li class="align-center"><img class="sdsuLogo" src="pictures/SDSU%20logo.png" alt="SDSU Logo"> </li>
-      <li><a href="#Menu">Menu</a></li>
-      <li><a href="#contactUs">Contact Us</a></li>
-      <li><a href="#FAQ">FAQ</a></li>
-      <li class="dropdown">
-        <a href="#" class="dropbtn">Important Links</a>
-        <div class="dropdown-content">
-          <a href="#">SDSU Main</a>
-          <a href="#">BlackBoard</a>
-          <a href="#">Aid Link</a>
-        </div>
-      </li>
-    </ul>
-  </body>
+li {
+  float: left;
+}
+
+.toRight{
+  float:right !important;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 18px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.sdsuLogo{
+  padding-top: 8px;
+  padding-left: 10px;
+  height: 41px;
+  width: 167px;
+}
+</style>
+</head>
+<body>
+
+<ul>
+  <div>
+    <li class="align-center"><img class="sdsuLogo" src="pictures/SDSU%20logo.png" alt="SDSU Logo"> </li>
+    <li><a href="#WebPlus">Home</a></li>
+    <li><a href="#news">News</a></li>
+    <li class="dropdown">
+      <a href="#" class="dropbtn">Important Links</a>
+      <div class="dropdown-content">
+        <a href="#">SDSU Main</a>
+        <a href="#">BlackBoard</a>
+        <a href="#">Aid Link</a>
+      </div>
+    </li>
+  </div>
+
+  <div class="toRight">
+    <li><a href="#WebPlus">FAQ</a></li>
+    <li><a href="#WebPlus">Contact Us</a></li>
+    <li><a href="#WebPlus">About Us</a></li>
+  </div>
+</ul>
+
+
+</body>
 </html>
