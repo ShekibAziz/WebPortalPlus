@@ -1,41 +1,60 @@
 <style>
-ul {
+/*********************************** Nav bar *********************************/
+
+body {
+    background-color: rgb(255, 230, 230);
+}
+
+.toRight {
+    float: right !important;
+}
+
+.topBar ul {
     list-style-type: none;
-    margin: 0;
+    margin-top: -8px;
+    margin-left: -8px;
     padding: 0;
     overflow: hidden;
     background-color: #000;
 }
 
-li {
+#spaceOnLeft {
+    margin-left: 10%;
+}
+
+#spaceOnRight {
+    margin-right: 10%;
+}
+
+.topBar li {
     float: left;
 }
 
-li a, .dropbtn {
+.topBar li a, .dropbtn {
     display: inline-block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 18px 16px;
     text-decoration: none;
 }
 
-li a:hover, .dropdown:hover .dropbtn {
-    background-color: red;
+.topBar li a:hover, .dropdown:hover .dropbtn {
+    background-color: #C41230;
 }
 
-li.dropdown {
+.topBar li.dropdown {
     display: inline-block;
 }
 
-.dropdown-content {
+.topBar .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
+    background-color: #D2C694;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
 
-.dropdown-content a {
+.topBar .dropdown-content a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
@@ -43,9 +62,77 @@ li.dropdown {
     text-align: left;
 }
 
-.dropdown-content a:hover {background-color: #f1f1f1}
+.topBar .dropdown-content a:hover {
+    background-color: #C41230
+}
 
-.dropdown:hover .dropdown-content {
+.topBar .dropdown:hover .dropdown-content {
     display: block;
 }
+
+.topBar .sdsuLogo {
+    padding-top: 8px;
+    padding-left: 0px;
+    height: 41px;
+    width: 167px;
+}
+
+
+/******************************** Nav bar ***********************************/
+
+
+/******************************** Side Bar **********************************/
+
+.sideBar ul {
+    list-style-type: none;
+    margin-top: -16px;
+    margin-left: 9%;
+    padding: 0;
+    width: 12.9%;
+    background-color: #C41230;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    align-items: center;
+}
+
+.sideBar li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+    border: 1px;
+    padding-top: 3px;
+    border-bottom-style: solid;
+}
+
+.sideBar li a.active {
+    background-color: #D2C694;
+    color: white;
+}
+
+.sideBar li a:hover:not(.active) {
+    background-color: #D2C694;
+    color: white;
+}
+
+
+/************************************* Side Bar **************************/
+
+
+/************************************* container **************************/
+
+.container {
+    float: left;
+    margin-left: 30%;
+    width: 250px;
+    height: 250px;
+    border: 1px;
+    border-style: solid;
+    padding-top: 3px;
+}
+
+
+/************************************* container **************************/
+
 </style>

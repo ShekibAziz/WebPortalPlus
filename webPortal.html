@@ -1,131 +1,9 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <style>
-        /*********************************** Nav bar *********************************/
-
-        .toRight {
-            float: right !important;
-        }
-
-        .topBar ul {
-            list-style-type: none;
-            margin-left: 0;
-            padding: 0;
-            overflow: hidden;
-            background-color: #000;
-        }
-
-        #spaceOnLeft {
-            margin-left: 10%;
-        }
-
-        #spaceOnRight {
-            margin-right: 10%;
-        }
-
-        .topBar li {
-            float: left;
-        }
-
-        .topBar li a,
-        .dropbtn {
-            display: inline-block;
-            color: white;
-            text-align: center;
-            padding: 18px 16px;
-            text-decoration: none;
-        }
-
-        .topBar li a:hover,
-        .dropdown:hover .dropbtn {
-            background-color: #C41230;
-        }
-
-        .topBar li.dropdown {
-            display: inline-block;
-        }
-
-        .topBar .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #D2C694;
-            min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-        }
-
-        .topBar .dropdown-content a {
-            color: black;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-            text-align: left;
-        }
-
-        .topBar .dropdown-content a:hover {
-            background-color: #C41230
-        }
-
-        .topBar .dropdown:hover .dropdown-content {
-            display: block;
-        }
-
-        .topBar .sdsuLogo {
-            padding-top: 8px;
-            padding-left: 2px;
-            height: 41px;
-            width: 167px;
-        }
-        /******************************** Nav bar ***********************************/
-        /******************************** Side Bar **********************************/
-
-        .sideBar ul {
-            list-style-type: none;
-            margin-top: -13px;
-            margin-left: 10%;
-            padding: 0;
-            width: 20%;
-            background-color: #C41230;
-            position: fixed;
-            height: 100%;
-            overflow: auto;
-            align-items: center;
-        }
-
-        .sideBar li a {
-            display: block;
-            color: #000;
-            padding: 8px 16px;
-            text-decoration: none;
-        }
-
-        .sideBar li a.active {
-            background-color: #D2C694;
-            color: white;
-        }
-
-        .sideBar li a:hover:not(.active) {
-            background-color: #D2C694;
-            color: white;
-        }
-        /************************************* Side Bar **************************/
-        /************************************* container **************************/
-
-        .container {
-            float:left;
-
-            margin-left: 35%;
-            width: 200px;
-            height: 200px;
-            border: 1px;
-            border-style: solid;
-        }
-        /************************************* container **************************/
-    </style>
+    <link rel="stylesheet" href="webPortal.css" media="screen" title="no title">
     <title>WebPortal</title>
 </head>
-
 <body>
     <div class="topBar">
 
@@ -145,8 +23,8 @@
 
             <div id="spaceOnRight" class="toRight">
                 <li><a href="#WebPlus">FAQ</a></li>
-                <li><a href="#WebPlus">Contact Us</a></li>
-                <li><a href="#WebPlus">About Us</a></li>
+                <li><a href="#WebPlus">Contacts</a></li>
+                <li><a href="#WebPlus">About</a></li>
             </div>
 
         </ul>
@@ -154,18 +32,19 @@
     <!--************************************* Side Bar *************************-->
     <div class="sideBar">
         <ul>
-            <li><a class="active" href="#home">Home</a></li>
-            <li><a href="#news">News</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#about">About</a></li>
+            <li><a class="active" href="#home">My Map</a></li>
+            <li><a href="#news">Degree Eval</a></li>
+            <li><a href="#contact">For You</a></li>
+            <li><a href="#about">For Me</a></li>
         </ul>
     </div>
     <!--************************************* Side Bar *************************-->
     <!--************************************* container *************************-->
     <div class="container">
-      <p>
-        Hi
-      </p>
+        <p align="center">
+            Semester
+            <hr/>
+        </p>
     </div>
     <!--************************************* container *************************-->
 </body>
