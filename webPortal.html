@@ -11,10 +11,18 @@
 
         .topBar ul {
             list-style-type: none;
-            margin: 0;
+            margin-left: 0;
             padding: 0;
             overflow: hidden;
             background-color: #000;
+        }
+
+        #spaceOnLeft {
+            margin-left: 10%;
+        }
+
+        #spaceOnRight {
+            margin-right: 10%;
         }
 
         .topBar li {
@@ -65,7 +73,7 @@
 
         .topBar .sdsuLogo {
             padding-top: 8px;
-            padding-left: 10px;
+            padding-left: 2px;
             height: 41px;
             width: 167px;
         }
@@ -74,7 +82,8 @@
 
         .sideBar ul {
             list-style-type: none;
-            margin-top: 0px;
+            margin-top: -13px;
+            margin-left: 10%;
             padding: 0;
             width: 20%;
             background-color: #C41230;
@@ -101,7 +110,20 @@
             color: white;
         }
         /************************************* Side Bar **************************/
+        /************************************* container **************************/
+
+        .container {
+            float:left;
+
+            margin-left: 35%;
+            width: 200px;
+            height: 200px;
+            border: 1px;
+            border-style: solid;
+        }
+        /************************************* container **************************/
     </style>
+    <title>WebPortal</title>
 </head>
 
 <body>
@@ -109,22 +131,19 @@
 
 
         <ul>
+            <li id="spaceOnLeft" class="align-center"><img class="sdsuLogo" src="pictures/SDSU%20logo.png" alt="SDSU Logo"> </li>
+            <li><a href="#WebPlus">Home</a></li>
+            <li><a href="#news">News</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Important Links</a>
+                <div class="dropdown-content">
+                    <a href="#">SDSU Main</a>
+                    <a href="#">BlackBoard</a>
+                    <a href="#">Aid Link</a>
+                </div>
+            </li>
 
-            <div>
-                <li class="align-center"><img class="sdsuLogo" src="pictures/SDSU%20logo.png" alt="SDSU Logo"> </li>
-                <li><a href="#WebPlus">Home</a></li>
-                <li><a href="#news">News</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropbtn">Important Links</a>
-                    <div class="dropdown-content">
-                        <a href="#">SDSU Main</a>
-                        <a href="#">BlackBoard</a>
-                        <a href="#">Aid Link</a>
-                    </div>
-                </li>
-            </div>
-
-            <div class="toRight">
+            <div id="spaceOnRight" class="toRight">
                 <li><a href="#WebPlus">FAQ</a></li>
                 <li><a href="#WebPlus">Contact Us</a></li>
                 <li><a href="#WebPlus">About Us</a></li>
@@ -142,7 +161,13 @@
         </ul>
     </div>
     <!--************************************* Side Bar *************************-->
-
+    <!--************************************* container *************************-->
+    <div class="container">
+      <p>
+        Hi
+      </p>
+    </div>
+    <!--************************************* container *************************-->
 </body>
 
 </html>
